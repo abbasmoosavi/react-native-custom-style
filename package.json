@@ -1,4 +1,3 @@
-
 {
   "name": "react-native-react-native-custom-style",
   "version": "1.0.0",
@@ -15,6 +14,9 @@
   "peerDependencies": {
     "react-native": "^0.41.2",
     "react-native-windows": "0.41.0-rc.1"
-
+  },
+  "dependencies": {
+    "react-native-responsive-fontsize": "^0.2.1",
+    "react-native-responsive-screen": "^1.2.2"
   }
 }
