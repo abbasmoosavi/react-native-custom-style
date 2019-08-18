@@ -1,16 +1,39 @@
 {
-  "name": "react-native-react-native-custom-style",
+  "name": "react-native-custom-style",
   "version": "1.0.0",
-  "description": "",
+  "description": "Custom style for easy style and responsive font, views",
   "main": "index.js",
+  "files": [
+    "src/"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "flow": "flow",
+    "lint": "eslint .",
+    "bootstrap": "yarn && yarn --cwd example",
+    "example": "yarn --cwd example",
+    "release": "yarn release-it"
   },
   "keywords": [
-    "react-native"
+    "react-native",
+    "react-native-custom-style",
+    "responsive",
+    "style",
+    "custom",
+    "font",
+    "fontFamily",
+    "color"
   ],
-  "author": "",
-  "license": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abbasmoosavi/react-native-custom-style.git"
+  },
+  "author": "Abbas Moosavi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/abbasmoosavi/react-native-custom-style/issues"
+  },
+  "homepage": "https://github.com/abbasmoosavi/react-native-custom-style#readme",
   "peerDependencies": {
     "react-native": "^0.41.2",
     "react-native-windows": "0.41.0-rc.1"
@@ -18,5 +41,22 @@
   "dependencies": {
     "react-native-responsive-fontsize": "^0.2.1",
     "react-native-responsive-screen": "^1.2.2"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "jest": {
+    "preset": "react-native",
+    "setupFiles": [
+      "<rootDir>/__setup__/enzyme.js"
+    ],
+    "modulePathIgnorePatterns": [
+      "<rootDir>/example/node_modules"
+    ],
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ]
   }
 }
