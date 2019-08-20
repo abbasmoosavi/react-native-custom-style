@@ -1,6 +1,6 @@
 {
   "name": "react-native-custom-style",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Custom style for easy style and responsive font, views",
   "main": "index.js",
   "files": [
